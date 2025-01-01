@@ -1,11 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Canva-like Application</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-     <h1>Sai Srijan!</h1>
+  <div class="app">
+    <div class="toolbar">
+      <button class="tool-btn" id="pen-tool">✏️ Pen</button>
+      <button class="tool-btn" id="rect-tool">🟥 Rectangle</button>
+      <button class="tool-btn" id="circle-tool">⭕ Circle</button>
+      <input type="color" id="color-picker" />
+      <button class="tool-btn" id="clear-btn">Clear</button>
+    </div>
+    <div class="canvas-container">
+      <canvas id="canvas" width="800" height="600"></canvas>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
 </body>
 </html>
